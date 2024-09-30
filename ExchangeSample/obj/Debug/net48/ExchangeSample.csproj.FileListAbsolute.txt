@@ -1,0 +1,5 @@
+C:\Users\Admin\Documents\Max\ExchangeSample\ExchangeSample\obj\Debug\net48\ExchangeSample.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Max\ExchangeSample\ExchangeSample\obj\Debug\net48\ExchangeSample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Max\ExchangeSample\ExchangeSample\obj\Debug\net48\ExchangeSample.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Max\ExchangeSample\ExchangeSample\obj\Debug\net48\ExchangeSample.AssemblyInfo.cs
+C:\Users\Admin\Documents\Max\ExchangeSample\ExchangeSample\obj\Debug\net48\ExchangeSample.csproj.CoreCompileInputs.cache

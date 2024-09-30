@@ -1,0 +1,55 @@
+EWS sample application started.
+Get folder operation request:
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/"
+   xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+<soap:Header>
+    <t:RequestServerVersion Version="Exchange2007_SP1" />
+  </soap:Header>
+  <soap:Body>
+    <GetFolder xmlns="http://schemas.microsoft.com/exchange/services/2006/messages"
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <FolderShape>
+        <t:BaseShape>Default</t:BaseShape>
+      </FolderShape>
+      <FolderIds>
+        <t:DistinguishedFolderId Id="inbox"/>
+      </FolderIds>
+    </GetFolder>
+  </soap:Body>
+</soap:Envelope>
+
+Caught Web exception:
+The remote server returned an error: (500) Internal Server Error.
+Get folder operation request:
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" 
+               xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" 
+               xmlns:soap="https://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <t:RequestServerVersion Version="Exchange2007_SP1" />
+  </soap:Header>
+  <soap:Body>
+    <m:CreateItem MessageDisposition="SendAndSaveCopy">
+      <m:SavedItemFolderId>
+        <t:DistinguishedFolderId Id="sentitems" />
+      </m:SavedItemFolderId>
+      <m:Items>
+        <t:Message>
+          <t:Subject>Company Soccer Team</t:Subject>
+          <t:Body BodyType="HTML">Are you interested in joining?</t:Body>
+          <t:ToRecipients>
+            <t:Mailbox>
+              <t:EmailAddress>sadie@contoso.com</t:EmailAddress>
+              </t:Mailbox>
+          </t:ToRecipients>
+        </t:Message>
+      </m:Items>
+    </m:CreateItem>
+  </soap:Body>
+</soap:Envelope>
+
+Caught Web exception:
+The remote server returned an error: (500) Internal Server Error.
+EWS sample application ends.
